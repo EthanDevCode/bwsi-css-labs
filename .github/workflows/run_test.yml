@@ -26,7 +26,7 @@ jobs:
         continue-on-error: true  
       - name: Test with pytest  
         run: |  
-          coverage run -m pytest --cov=labs tests/tests_1b.py tests/tests_1c.py tests/tests_1d.py -v -s  
+          coverage run -m pytest --cov=labs tests/test_1b.py tests/test_1c.py tests/test_1d.py -v -s  
       - name: Generate Coverage Report  
         run: |  
           coverage report -m
